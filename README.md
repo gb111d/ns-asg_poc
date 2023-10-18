@@ -3,7 +3,7 @@
 There is a SQL injection vulnerability in the Netcom NS-ASG application security gateway. Attackers exploit vulnerabilities to cause harm to servers.
 [official website](https://www.netentsec.com/)
 version:NS-ASG 6.3
-Vulnerability points：/protocol/firewall/uploadfirewall.php analyse as below: As shown below, the $FireWallId database value is accepted by messagecontent and then substituted into the database statement.
+Vulnerability points：/protocol/firewall/uploadfirewall.php analyse as below , the $FireWallId database value is accepted by messagecontent and then substituted into the database statement.
 
 ![image](https://github.com/gb111d/ns-asg_poc/assets/148308306/3f18372a-9798-49ce-93d1-16cdb9daec78)
 
