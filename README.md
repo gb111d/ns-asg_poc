@@ -36,7 +36,8 @@ jsoncontent=%7B%22protocolType%22%3A%22uploadfirewall%22%2C%22messagecontent%22%
 
 Send request with the payload above.
 
-![image](https://github.com/gb111d/ns-asg_poc/assets/148308306/b1c46f15-a899-4d81-9bf3-a3999ee2d28e)
+![image](https://github.com/gb111d/ns-asg_poc/assets/148308306/97490bc6-c1a7-4f28-a6fe-102643b3c1a3)
+
 
 ![image](https://github.com/gb111d/ns-asg_poc/assets/148308306/ee5f5fac-4523-4038-aa91-058c1f88c6ac)
 
